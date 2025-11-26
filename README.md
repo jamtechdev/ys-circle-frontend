@@ -192,15 +192,6 @@ Follow [Next.js Deployment Documentation](https://nextjs.org/docs/app/building-y
 - Follow ESLint rules
 - Write meaningful commit messages
 - Update README if adding new features
-
-## 📝 License
-
-[Add your license information]
-
-## 📞 Support
-
-For issues or questions, please create an issue in the repository.
-
 ---
 
 **Last Updated:** November 26, 2025

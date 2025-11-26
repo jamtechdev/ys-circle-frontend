@@ -1,33 +1,24 @@
-'use client'
-import { usePathname } from 'next/navigation'
+// DO NOT use any client hook here!
+import { ReduxProvider } from '../redux/provider'
 import { ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
-import theme from '@/lib/theme'
-import { ReduxProvider } from '@/redux/provider'
-import AuthLayout from '@/components/layout/AuthLayout'
-import DashboardLayout from '@/components/layout/DashboardLayout'
+import theme from '../lib/theme'
+import ClientApp from './ClientApp'
 import './globals.css'
 
-export default function RootLayout({ children }) {
-  const pathname = usePathname()
-  
-  const authRoutes = ['/login', '/register', '/forgot-password', '/reset-password']
-  const isAuthRoute = authRoutes.includes(pathname)
 
+export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body id="root" suppressHydrationWarning>
+    <html lang="en">
+      <body>
         <ReduxProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />
-            {isAuthRoute ? (
-              <AuthLayout>{children}</AuthLayout>
-            ) : (
-              <DashboardLayout>{children}</DashboardLayout>
-            )}
+            <ClientApp>{children}</ClientApp>
           </ThemeProvider>
         </ReduxProvider>
       </body>
     </html>
   )
 }
+

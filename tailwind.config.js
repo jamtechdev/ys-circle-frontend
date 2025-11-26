@@ -1,17 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  important: '#root',
-  prefix: 'tw-',
   content: [
-    "./src/pages/**/*.{js,jsx}",
-    "./src/components/**/*.{js,jsx}",
-    "./src/app/**/*.{js,jsx}",
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  prefix: 'tw-', 
   theme: {
     extend: {},
   },
   plugins: [],
-  corePlugins: {
-    preflight: false,
-  },
 }

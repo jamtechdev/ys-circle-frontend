@@ -5,8 +5,8 @@ import {
   registerUser, 
   logoutUser, 
   fetchUser,
-  clearError 
-} from '@/redux/slices/authSlice'
+  clearError
+} from '../redux/slices/authSlice'
 
 export function useAuth() {
   const dispatch = useAppDispatch()

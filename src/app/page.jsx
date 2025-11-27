@@ -2,24 +2,21 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { useAuth } from '../hooks/useAuth'
-import { Box, Container, Typography, Button, Grid, Card, CardContent } from '@mui/material'
-import Header from '../components/layout/Header'
-import Footer from '../components/layout/Footer'
+import { Container, Typography, Button, Grid, Card, CardContent, Box } from '@mui/material'
+import LandingLayout from '../components/layout/LandingLayout'
 
 export default function HomePage() {
   const router = useRouter()
   const { user, loading } = useAuth()
 
-  useEffect(() => {
-    if (!loading && user) {
-      router.push(`/${user.roles[0]}/dashboard`)
-    }
-  }, [user, loading, router])
+  // useEffect(() => {
+  //   if (!loading && user) {
+  //     router.push(`/${user.roles[0]}/dashboard`)
+  //   }
+  // }, [user, loading, router])
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <Header />
-      
+    <LandingLayout>
       {/* Hero Section */}
       <Box
         sx={{
@@ -99,8 +96,6 @@ export default function HomePage() {
           </Grid>
         </Grid>
       </Container>
-
-      <Footer />
-    </Box>
+    </LandingLayout>
   )
 }

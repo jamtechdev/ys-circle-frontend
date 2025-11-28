@@ -62,11 +62,6 @@ export default function AboutPage() {
             </h3>
           </div>
         </div>
-
-        {/* Shapes */}
-        <div className="absolute left-0 bottom-0 opacity-20">
-          <img src="/assets/img/slider/shape-3.svg" alt="" />
-        </div>
       </div>
 
       {/* ABOUT SECTION */}

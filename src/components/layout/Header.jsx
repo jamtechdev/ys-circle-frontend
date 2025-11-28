@@ -3,14 +3,18 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
+// import LoginModal from "../../modalComponents/LoginModal";
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const router = useRouter();
 
+  // const [loginOpen, setLoginOpen] = useState(false);
+
   return (
     <header>
       <nav className="bg-white shadow-sm px-4 lg:px-6 py-4">
-        <div className="flex flex-wrap justify-between items-center theme-container">
+        <div className="flex flex-wrap justify-between items-center mx-auto container">
           <Link href="/" className="flex items-center">
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
               <img src="/assets/img/logo.png" alt="My image" />
@@ -18,6 +22,12 @@ export default function Header() {
           </Link>
 
           <div className="flex items-center lg:order-2">
+            {/* <button
+              className="theme-btn-primary px-5"
+              onClick={() => setLoginOpen(true)}
+            >
+              Log in
+            </button> */}
             <button
               onClick={() => router.push("/login")}
               className="theme-btn-primary px-5"
@@ -104,6 +114,8 @@ export default function Header() {
           </div>
         </div>
       </nav>
+
+      {/* <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} /> */}
     </header>
   );
 }

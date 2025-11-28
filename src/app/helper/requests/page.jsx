@@ -1,11 +1,11 @@
-'use client'
-import { Typography } from '@mui/material'
+"use client";
+import { Typography } from "@mui/material";
 
 export default function HelperRequests() {
   return (
-    <div className="tw-p-8">
+    <div className=" p-8">
       <Typography variant="h4">Requests</Typography>
       <Typography>Requests assigned to you.</Typography>
     </div>
-  )
+  );
 }

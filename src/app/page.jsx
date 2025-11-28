@@ -970,12 +970,12 @@ export default function HomePage() {
       <section className="py-16 relative">
         <div className="container mx-auto">
           <h1 className="title mb-10">Need help?</h1>
-          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-20">
             <div className="flex items-start">
-              <div class="min-w-10 mr-4">
+              <div className="min-w-10 mr-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="text-orange-400"
+                  className="text-orange-400"
                   viewBox="0 0 512 512"
                 >
                   <path
@@ -999,10 +999,10 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex items-start">
-              <div class="min-w-10 mr-4">
+              <div className="min-w-10 mr-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="text-indigo-500"
+                  className="text-indigo-500"
                   viewBox="0 0 512 512"
                 >
                   <path
@@ -1022,10 +1022,10 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex items-start">
-              <div class="min-w-10 mr-4">
+              <div className="min-w-10 mr-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="text-green-600"
+                  className="text-green-600"
                   viewBox="0 0 512 512"
                 >
                   <path

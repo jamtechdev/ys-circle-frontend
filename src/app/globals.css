@@ -58,6 +58,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.auth-bg {
+
+  background-image: url(/assets/img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.auth-bg::after {
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+
 .border-primary {
   border-color: var(--primary);
 }
@@ -72,6 +93,10 @@ body {
 
 .font-nunito {
   font-family: "Nunito", sans-serif;
+}
+
+.font-nunito-2 {
+  font-family: "Nunito", sans-serif !important;
 }
 
 .theme-btn-primary:hover {
@@ -224,6 +249,10 @@ body {
   overflow: hidden;
 }
 
+.custom-transform {
+  animation: leafAniamtion 12s ease-in infinite;
+}
+
 @keyframes leafAniamtion {
 
   0%,
@@ -292,6 +321,23 @@ body {
   background-size: auto;
   background-size: cover;
   /* margin-left: -100px; */
+}
+
+.breadcumb-area {
+  position: relative;
+  background: url("/assets/img/about-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.breadcumb-area:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .aboutSection .about-image .img-1 img {
@@ -518,4 +564,69 @@ body {
   transform: translateX(-50%) scaleX(2);
   opacity: 0;
   filter: blur(10px);
+}
+
+.service-card {
+  padding: 65px 40px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 7px 28px rgba(0, 0, 0, 0.03);
+  text-align: center;
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+.service-card .icon {
+  margin-bottom: 33px;
+  height: 111px;
+}
+
+.service-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 64px;
+  text-transform: capitalize;
+  color: #061408;
+  font-family: "Nunito", sans-serif;
+}
+
+.service-card:hover h2,
+.service-card:hover p,
+.service-card:hover a {
+  color: #fff !important;
+}
+
+.service-card p {
+  color: #6D7680;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card .services-btn {
+  padding-top: 10px;
+  display: block;
+}
+
+.service-card .services-btn a {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  position: relative;
+  padding-right: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.teamCard:hover ul {
+  opacity: 1;
+  visibility: visible;
+  left: 65px;
+}
+
+.teamCard ul,
+.teamCard ul li a {
+  transition: all 0.3s ease-in-out;
 }

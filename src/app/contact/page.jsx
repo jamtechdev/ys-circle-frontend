@@ -57,8 +57,8 @@ export default function ContactPage() {
                 Address
               </h1>
               <p className="mt-8 text-[18px] font-medium">
-                contact@aidUs.com <br />
-                info@aidUs.com
+                contact@support.com <br />
+                info@supportcircle.com
               </p>
             </div>
           </div>
